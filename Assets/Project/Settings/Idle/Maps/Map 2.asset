@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01b028c5178a4551b88171e05ef081ce, type: 3}
+  m_Name: Map 2
+  m_EditorClassIdentifier: Assembly-CSharp::Project.Scripts.Game.Settings.Idle.Maps.MapSettings
+  MapId: 1
+  InitialStateSettings:
+    Entities:
+    - <EntityType>k__BackingField: 1
+      <ConfigId>k__BackingField: dummy
+      <Level>k__BackingField: 2
+      <InitialPosition>k__BackingField: {x: 3, y: 8}
+    - <EntityType>k__BackingField: 1
+      <ConfigId>k__BackingField: dummy
+      <Level>k__BackingField: 2
+      <InitialPosition>k__BackingField: {x: 8, y: 3}
+    - <EntityType>k__BackingField: 1
+      <ConfigId>k__BackingField: dummy
+      <Level>k__BackingField: 2
+      <InitialPosition>k__BackingField: {x: 4, y: 4}

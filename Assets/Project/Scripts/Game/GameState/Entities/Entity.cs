@@ -1,0 +1,26 @@
+﻿using R3;
+using UnityEngine;
+
+namespace Project.Scripts.Game.GameState.Entities{
+    public abstract class Entity{
+        
+        public EntityData Origin{ get; }
+        public int UniqueId => Origin.UniqueId;
+        public string ConfigId => Origin.ConfigId;
+       
+        public EntityType Type => Origin.Type;
+        public readonly ReactiveProperty<int> Level;
+        public readonly ReactiveProperty<Vector2Int> Position;
+
+        public Entity(EntityData data){
+            Origin = data;
+            
+            Level = new ReactiveProperty<int>(data.Level);
+            Level.Subscribe(newValue => data.Level = newValue);
+            
+            Position = new ReactiveProperty<Vector2Int>(data.Position);
+            Position.Subscribe(newPosition=> { data.Position = newPosition; });
+            
+        }
+    }
+}
